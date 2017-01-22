@@ -38,5 +38,5 @@ void setup() {
 }
 
 void loop() {
-    pulsePattern.update();
+    pulsePattern.increment();
 }

@@ -38,21 +38,6 @@ void PulsePattern::initializePulses() {
 }
 
 void PulsePattern::increment(void) {
-    uint16_t n = strip->numPixels();
-    for (uint16_t i = 0; i < n; i++) {
-        if (isPixelOn(i)) {
-            int time = getStep(i);
-            uint32_t color = function->getColor(0, time);
-            strip->setPixelColor(i, color);
-            if (time >= function->getDuration()) {
-                setStep(i, 0);
-            }
-            incrementStep(i);
-        }
-    }
-}
-
-void PulsePattern::update(void) {
     for (uint16_t i = 0; i < nPulses; i++) {
         
         if (isComplete(i)) {

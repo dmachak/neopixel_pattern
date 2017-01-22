@@ -6,13 +6,36 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Test	KEYWORD1
+PulsePattern	KEYWORD1
+SinColorFunction	KEYWORD1
+ColorPalette	KEYWORD1
+StripUtil	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-doSomething	KEYWORD2
+# ColorPalette
+getColor	KEYWORD2
+red	KEYWORD2
+green	KEYWORD2
+blue	KEYWORD2
+setColor	KEYWORD2
+
+#SinColorFunction
+getDuration	KEYWORD2
+getParam	KEYWORD2
+setParam	KEYWORD2
+
+#PulsePattern
+increment	KEYWORD2
+
+#StripUtil
+resetStrip	KEYWORD2
+setStripToColor	KEYWORD2
+fade	KEYWORD2
+fadeIn	KEYWORD2
+swipeUp	KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)

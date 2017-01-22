@@ -46,8 +46,7 @@ class PulsePattern {
 public:
     PulsePattern(Adafruit_NeoPixel* strip, ColorFunction* function, int nPulses);
     void increment(void);
-    void update(void);
-   
+
 protected:
     inline boolean getFlag(uint16_t n, uint8_t flag) {return flags[n] & flag;}
     inline void setFlag(uint16_t n, uint8_t flag, boolean value) {flags[n] = value ?  (flags[n] | flag) : (flags[n] & (255^flag));}
